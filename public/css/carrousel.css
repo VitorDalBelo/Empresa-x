@@ -1,0 +1,16 @@
+.carouselimg{
+    height: 44vh;
+    min-height: 250px;
+}
+.bolinha{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+}
+
+@media (min-width: 768px){
+    .carouselimg{
+        height:  60vh !important;
+        
+    }
+}

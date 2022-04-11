@@ -1,0 +1,53 @@
+.botaoAmarelo{
+    background-color: #FCAE39;
+    border:none;
+    color: white;
+    transition:  background-color 0.5s ease-in-out;
+    padding: 5px 10px;
+}
+#title{
+    color: #F16E3C;
+}
+.botaoAmarelo:hover{
+    background-color: #ca8a2afd;
+    
+}
+.botaoAmarelo:focus{
+    
+    border-color: #ca8a2afd;
+    box-shadow: 0 0 0 3px #ca8a2a40;
+}
+.paragraf{
+    padding: 0 37px;
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.album{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.albumitem{
+    max-height: 200px;
+    transition: max-height 1s ease-in-out;
+    margin:6px;
+}
+
+.close  img{
+    max-height: 0px; 
+}
+@media (max-width: 768px){
+    .box1{
+        flex-wrap: wrap;
+    }
+
+}

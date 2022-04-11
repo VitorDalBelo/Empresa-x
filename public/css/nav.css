@@ -1,0 +1,108 @@
+body, html{
+    height: 100vh;
+    min-width: 100vw;
+    overflow-y: none;
+}
+div#root{
+    position: absolute;
+    top:0;
+    right: 0;
+    min-height: 100vh;
+    min-width: 100%;
+
+}
+.navcustom {
+    background-color: #ededed !important;
+    font-family: "Arial, Helvetica, sans-serif";
+    font-weight: 400;
+    min-height: 110px;
+
+    
+}
+#navlogo{
+    width: 96px;
+}
+.custom-col{
+    flex: 0 0 auto;
+    width: 100%;
+}
+.telbuton{
+    padding: 10px;
+    background-color: #F16E3C;
+    color:white;
+    outline: none;
+    border: none;
+    font-family: 'arial';
+    white-space: nowrap;
+    transition:  background-color 0.5s ease-in-out;
+    
+}
+.telbuton:hover{
+    background-color: #c75a2f;
+}
+.telbuton:focus{
+    
+    border-color: #c75a2f;
+    box-shadow: 0 0 0 3px #c75a2f80;
+}
+.navul li{
+    padding: 0 24px;
+}
+.navul li:hover{
+    text-decoration: underline;
+}
+.navul li a:focus{
+    border-radius: 8px;
+    border-color: #565e64;
+    box-shadow: 0 0 0 2px rgb(130 138 145 / 50%);
+}
+.pagecontent{
+    position: relative;
+    top:110px;
+    min-width: 100%;
+    z-index: 0;
+    overflow-y: auto;
+    height: calc(100vh - 110px);
+}
+#footer{
+    z-index: 0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    min-width: 100vw;
+    background-color: #ededed !important;
+    --bs-gutter-x: 0 !important;
+    max-height: 144px;
+}
+@media (min-width: 768px){
+    .custom-col{
+        width: 69%!important;
+        
+    }
+
+}
+@media (max-width: 768px){
+    #navlogo{
+        display: none;
+    }
+    .navcustom {
+        background-color: #ededed !important;
+        font-family: "Arial, Helvetica, sans-serif";
+        font-weight: 400;
+        min-height: 75px;
+        background-image: url("../LogoR.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .pagecontent{
+        height: calc(100vh - 75px);
+        top:75px;
+    }
+
+}
+@media (min-width:575px){
+    #footer{
+        max-height: 64px;
+    }
+    
+}
